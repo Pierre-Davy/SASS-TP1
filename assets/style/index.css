@@ -1,3 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "Inter-Extrabold";
+  src: url(../font/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Merriweather-light";
+  src: url(../font/Merriweather-Light.ttf);
+}
+.button {
+  border: 2px solid black;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  background: transparent;
+}
+.button:hover {
+  background: rgb(200, 200, 200);
+}
+
+a {
+  color: black;
+  font-family: "Inter-Extrabold";
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
 body {
-  background: url(../images/bg.jpg) fixed center/cover repeat;
+  background: url(../images/bg.jpg) center/cover fixed;
+}
+
+header {
+  text-align: center;
+  margin: 200px auto 120px;
+  color: rgb(240, 240, 240);
+}
+header h1 {
+  text-transform: uppercase;
+  font-family: "Inter-Extrabold";
+  font-size: 7rem;
+  margin: 0 0 35px 0;
+}
+header p {
+  font-family: "Merriweather-light";
+  font-style: italic;
+  font-size: 1.5rem;
+}
+header i {
+  font-size: 5rem;
+  margin: 50px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  height: 104px;
+  background: rgba(240, 240, 240, 0.3);
+}
+nav .link {
+  display: flex;
+  justify-content: start;
+  text-transform: uppercase;
+}
+nav .link li {
+  border: 1px solid rgb(240, 240, 240);
+  width: 33%;
+  padding: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+nav .link li a {
+  color: rgb(240, 240, 240);
+}
+nav .social-network {
+  display: flex;
+  justify-content: end;
+}
+nav .social-network li {
+  padding: 0 50px;
+}
+nav .social-network li a {
+  color: rgb(240, 240, 240);
 }/*# sourceMappingURL=index.css.map */
