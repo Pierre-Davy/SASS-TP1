@@ -1,38 +1,47 @@
-@font-face {
-    font-family: "Inter-Extrabold";
-    src: url(../font/Inter-ExtraBold.ttf);
-  }
-  
-  @font-face {
-    font-family: "Merriweather-light";
-    src: url(../font/Merriweather-Light.ttf);
-  }
-  
-  $font1: "Inter-Extrabold";
-  $font2: "Merriweather-light";
-  
-  $color1: rgb(240, 240, 240);
-  $color2: rgb(177, 172, 172);
-  $color3: rgb(10, 10, 10);
-
-nav{
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto;
+  width: 75%;
+  height: 10vh;
+  background: rgba(255, 255, 255, 0.2);
+  ul {
     display: grid;
-    grid-template-columns: 50% 50%;
-    height: 10vh;
-    border: 2px solid black;
-    ul{
-        display: flex;
-        align-items: center;
-        &.link{
-            justify-content: left;
-        }
-        &.social-network{
-            justify-content: right;
-        }
-        a{
-            color: $color1;
-        }
+    align-items: center;
+
+    a {
+      color: $color1;
     }
 
+    &.link {
+      grid-template-columns: 33% 33% 34%;
+      li {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        padding: 3.8vh 0;
+        text-align: center;
 
+        &:hover {
+          background: $color2;
+          a {
+            color: $color3;
+          }
+        }
+      }
+    }
+    &.social-network {
+      display: flex;
+      justify-content: right;
+      li {
+        margin-right: 90px;
+        font-size: 1.3rem;
+
+        &:hover {
+          a {
+            color: $color3;
+          }
+        }
+      }
+    }
+  }
 }
