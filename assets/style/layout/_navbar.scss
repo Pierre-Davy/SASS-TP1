@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Inter-Extrabold";
+    src: url(../font/Inter-ExtraBold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Merriweather-light";
+    src: url(../font/Merriweather-Light.ttf);
+  }
+  
+  $font1: "Inter-Extrabold";
+  $font2: "Merriweather-light";
+  
+  $color1: rgb(240, 240, 240);
+  $color2: rgb(177, 172, 172);
+  $color3: rgb(10, 10, 10);
+
+nav{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 10vh;
+    border: 2px solid black;
+    ul{
+        display: flex;
+        align-items: center;
+        &.link{
+            justify-content: left;
+        }
+        &.social-network{
+            justify-content: right;
+        }
+        a{
+            color: $color1;
+        }
+    }
+
+
+}
